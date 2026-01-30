@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RentalFinds - Global AI Rental Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+              heading: ['Outfit', 'sans-serif'],
+            },
+            colors: {
+              // Vibrant Deep Space Palette
+              background: '#030712', // Rich Black/Blue
+              surface: '#111827', // Gray 900
+              surfaceHighlight: '#1f2937', // Gray 800
+              border: '#374151',
+              
+              // Brand Colors (Vibrant Violet & Indigo)
+              brand: {
+                50: '#f5f3ff',
+                100: '#ede9fe',
+                400: '#a78bfa',
+                500: '#8b5cf6', // Violet
+                600: '#7c3aed',
+                700: '#6d28d9',
+              },
+              // Action/Accent (Electric Pink/Rose)
+              accent: {
+                400: '#f472b6',
+                500: '#ec4899', // Pink
+                600: '#db2777',
+              },
+              // Success (Emerald)
+              success: {
+                 500: '#10b981',
+                 600: '#059669',
+              }
+            },
+            backgroundImage: {
+               'hero-pattern': "url('https://www.transparenttextures.com/patterns/cubes.png')",
+               'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            },
+            boxShadow: {
+              'glow': '0 0 20px rgba(139, 92, 246, 0.3)',
+              'glow-accent': '0 0 20px rgba(236, 72, 153, 0.3)',
+              'card': '0 8px 30px rgba(0,0,0,0.5)',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body { 
+        background-color: #030712; 
+        color: #f3f4f6;
+        font-family: 'Plus Jakarta Sans', sans-serif; 
+        -webkit-font-smoothing: antialiased;
+      }
+      /* Clean Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #030712; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #374151; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #4b5563; 
+      }
+      .glass-panel {
+        background: rgba(17, 24, 39, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-background text-gray-100 antialiased selection:bg-brand-500 selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "RentalFinds",
+  "description": "Global rental discovery powered by AI and Google Maps.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone"
+  ]
+}
